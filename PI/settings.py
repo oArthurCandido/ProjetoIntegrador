@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fyxo$q(ndz+ndxld%05&n_k_*7hxvs0ivtickc757h01lv3=(='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 # Application definition
 
@@ -71,7 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'PI.wsgi.application'
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
